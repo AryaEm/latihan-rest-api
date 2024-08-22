@@ -18,9 +18,9 @@ exports.bmi = (req, res) => {
     }
 
     let response = {
-        tinggi: tinggi,
+        tinggi: tinggi + "m",
         berat: berat,
-        bmi: bmi.toLocaleString(2),
+        bmi: bmi.toFixed(2),
         status: kategori 
     }
 

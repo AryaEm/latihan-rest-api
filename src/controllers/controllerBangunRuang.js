@@ -39,7 +39,7 @@ exports.bola = (req, res) => {
     let luasPermukaan = 4 * Math.PI * (Math.pow(jari, 2))
 
     let response = {
-        jari: jari,
+        jari_jari: jari,
         volume: volume.toFixed(2),
         luasPermukaan: luasPermukaan.toFixed(2),
     }
@@ -56,7 +56,7 @@ exports.tabung = (req, res) => {
     let luasPermukaan = 2 * Math.PI * jari * (jari + tinggi)
 
     let response = {
-        jari: jari,
+        jari_jari: jari,
         tinggi: tinggi,
         volume: volume.toFixed(2),
         luasPermukaan: luasPermukaan.toFixed(2),
